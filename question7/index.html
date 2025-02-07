@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #center{
+            text-align: center;
+            font-family: Verdana;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+        #center h3{
+            opacity: 0;
+        }
+        #progressBar{
+            
+           width: 300px;
+           height: 10px;
+ 
+           background-color: #dadada;
+           border-radius: 30px;
+        }
+
+        #progress{
+            width: 0;
+            height: 100%;
+            background-color: #4CAF50;
+            border-radius: 100px;
+            transition: all cubic-bezier(0.25, 0.46, 0.45, 0.94);
+        }
+    </style>
+</head>
+<body>
+    <!-- Display a progress bar that updates in real-time, showing the progress of a task, download, or form submission.  -->
+<div id="center">
+    <h3>Download Completed</h3>
+    <div id="progressBar">
+        <div id="progress"></div>
+    </div>
+</div>
+    <script src="./script.js"></script>
+</body>
+</html>
